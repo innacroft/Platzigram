@@ -32,7 +32,7 @@
                 <div class="alert alert-danger">
                     <b>Picture: </b>{{error}}
                  </div> 
-             {% endfor %}
+                {% endfor %}
                  
 
                 <hr><br>
@@ -55,18 +55,35 @@
             
                 <div class="form-group">
                     <label>Biography</label>
-                    <textarea class="form-control" name="biography">{{ profile.biography }}</textarea>
+                    {#si ocurre un error lo muestra#}
+                    <textarea 
+                    class="form-control {% if form.biography.errors %} is-invalid {% endif %}" 
+                    name="biography">
+                    {% if form.errors %} {{form.biography.value}} {% else %} {{ profile.biography }} {% endif %}
+                    </textarea>
+                    {#acá muestra el error dentro de div en un cuadro rojo, con la descipcion#}
+                    <div class="invalid-feedback">
+                        {% for error in form.biography.errors %} 
+                        {{error}}
+                        {% endfor %}
+                      </div>
                 </div>
 
                 <div class="form-group">
                     <label>Phone number</label>
                     <input
-                        class="form-control"
+                        class="form-control {% if form.phone_number.errors %} is-invalid {% endif %}"
                         type="text"
                         name="phone_number"
+                        {% if form.errors %} {{form.phone_number.value}} {% else %} {{ profile.phone_number }} {% endif %}
                         placeholder="Phone number"
                         value="{{ profile.phone_number }}"
                     />
+                    <div class="invalid-feedback">
+                        {% for error in form.phone_number.errors %} 
+                        {{error}}
+                        {% endfor %}
+                      </div>
               </div>
 
                 <button type="submit"class="btn btn-primary btn-block mt-5">Update info</button>
