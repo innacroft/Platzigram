@@ -24,7 +24,7 @@ def create_post(request):
         form=PostForm(request.POST,request.FILES) #crea el formulario con los datos que vengan en request
         if form.is_valid():
             form.save()
-            return redirect('feed')
+            return redirect('posts:feed')
     else: #si el form no es post
         form=PostForm() #instancia del form vacio
     return render(request=request,
