@@ -6,9 +6,9 @@
 
 {% block container %}
 
-    {% if error %}
-        <p class="alert alert-danger">{{ error }}</p>
-    {% endif%}
+    {% if form.errors %}
+        <p class="alert alert-danger">username or password is not valid! </p>
+    {% endif %}
 
     <form method="POST" action="{% url "users:login" %}">
         {% csrf_token %}

@@ -58,9 +58,9 @@
                     {#si ocurre un error lo muestra#}
                     <textarea 
                     class="form-control {% if form.biography.errors %} is-invalid {% endif %}" 
-                    name="biography">
-                    {% if form.errors %} {{form.biography.value}} {% else %} {{ profile.biography }} {% endif %}
-                    </textarea>
+                    type="text"
+                    name="biography"
+                    >{% if form.errors %} {{ form.biography.value }} {% else %} {{ profile.biography }} {% endif %}</textarea>
                     {#acá muestra el error dentro de div en un cuadro rojo, con la descipcion#}
                     <div class="invalid-feedback">
                         {% for error in form.biography.errors %} 
