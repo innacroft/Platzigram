@@ -45,19 +45,7 @@ class CreatePostView(LoginRequiredMixin,CreateView):
 
 @login_required
 def like_post(request,user1,user2):
-  """current user= user2 , user to follow = user1 """
-  usr_id1=User.objects.get(username=user1).id
-  print(usr_id1)
-  usr_id2=User.objects.get(username=user2).id
-  print(usr_id2)
-  if (Follow.objects.filter(following=usr_id1, follower=usr_id2).count())!=0:
-    print("registro ya existe..eliminando")
-    Follow.objects.filter(following=usr_id1, follower=usr_id2).delete()
-  else:
-    print("creando registro..")
-    Follow.objects.create(follower=usr_id2,following=usr_id1) 
-  
-  return HttpResponseRedirect(reverse('users:detail',args=[user1,]))
+ pass
 
 
     

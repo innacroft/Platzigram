@@ -26,10 +26,10 @@ urlpatterns = [
         name='create'
     ),
 
-    path(
-        route='<str:user1>/<str:user2>/',
-        view=views.like_post,
-        name='like_post'
-    ),
+ #   path(
+ #       route='<str:user1>/<str:user2>/',
+ #       view=views.like_post,
+  #      name='like_post'
+ #   ),
   
 ]
