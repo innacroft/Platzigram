@@ -25,5 +25,11 @@ urlpatterns = [
         view=views.CreatePostView.as_view(),
         name='create'
     ),
+
+    path(
+        route='<str:user1>/<str:user2>/',
+        view=views.like_post,
+        name='like_post'
+    ),
   
 ]

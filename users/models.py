@@ -25,7 +25,16 @@ class Profile(models.Model):
 
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+    posts_count= models.IntegerField(default=0)
 
     def __str__(self):
         """Return username."""
         return self.user.username
+
+
+class Follow(models.Model):
+    follower=models.IntegerField(default=0)
+    following=models.IntegerField(default=0)
+   
+
+
