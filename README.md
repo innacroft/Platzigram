@@ -34,7 +34,7 @@ Instagram made by platzi using python.
 ![](https://github.com/innacroft/Django/blob/master/static/img/details.PNG)
 
 #### Path structure: 
-![](![](https://github.com/innacroft/Django/blob/master/static/img/structure.PNG)
+![](https://github.com/innacroft/Django/blob/master/static/img/structure.PNG)
 #### Other resources
 - https://platzi.com/
 
