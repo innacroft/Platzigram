@@ -6,11 +6,11 @@
 Instagram made by platzi using python.
 
 #### Features
-*Create and login for users
-*Create new posts ( photo with description )
-*Feed for see posts of other users
-*Users details and button with follow
-*Counter for followers of each users
+- Creation and login for users <br>
+- Creation of  posts ( photo with description )<br>
+- Feed for see posts of other users<br>
+- Users details and button with follow<br>
+- Counter of followers for each user<br>
 
 #### Technologies
 - Python
