@@ -23,18 +23,18 @@ Instagram made by platzi using python.
 #### VIEWS
 
 ### LOGIN
-![](https://github.com/innacroft/Django/tree/master/static/img/login.PNG)
+![](https://github.com/innacroft/Django/blob/master/static/img/login.PNG)
 ### SIGNUP
-![](https://github.com/innacroft/Django/tree/master/static/img/signup.PNG)
+![](https://github.com/innacroft/Django/blob/master/static/img/signup.PNG)
 ### FEED
-![](https://github.com/innacroft/Django/tree/master/static/img/feed.PNG)
+![](https://github.com/innacroft/Django/blob/master/static/img/feed.PNG)
 ### CREATE NEW POST
-![](https://github.com/innacroft/Django/tree/master/static/img/newpost.PNG)
+![](https://github.com/innacroft/Django/blob/master/static/img/newpost.PNG)
 ### PROFILE DETAILS
-![](https://github.com/innacroft/Django/tree/master/static/img/profile.PNG)
+![](https://github.com/innacroft/Django/blob/master/static/img/details.PNG)
 
 #### Path structure: 
-![](https://github.com/innacroft/Django/tree/master/static/img/structure.PNG)
+![](![](https://github.com/innacroft/Django/blob/master/static/img/structure.PNG))
 #### Other resources
 - https://platzi.com/
 
